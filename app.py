@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
+from lib.encrypt import encryptfolder
+
 
 root = tk.Tk()
 
@@ -13,6 +15,8 @@ button = tk.Button(root)
 button.pack()
 
 make = filedialog.askopenfilename()
+encryptfolder(make)
+
 #path = filedialog.askdirectory(title="select a file idiot")
 
 
